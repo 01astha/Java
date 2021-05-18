@@ -7,7 +7,7 @@ class X {
     int a, b;
     public void get_value()
     {
-        System.out.println("Enter the value of a and b:");
+        System.out.println("Enter the value of a and b: ");
         a = input.nextInt();
         b = input.nextInt();
     }
@@ -17,7 +17,7 @@ class Y extends X {
 
     public void sum()
     {
-        System.out.println("Sum = "+ (a+b));
+        System.out.println("Sum = " + (a+b));
     }
 }
 
@@ -25,7 +25,7 @@ class Z extends X {
 
     public void subtract()
     {
-        System.out.println("Subtraction = "+ (a-b));
+        System.out.println("Subtraction = " + (a-b));
     }
 }
 
@@ -33,7 +33,7 @@ class Q extends X {
 
     public void product()
     {
-        System.out.println("Product = "+ (a*b));
+        System.out.println("Product = " + (a*b));
     }
 }
 
