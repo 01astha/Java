@@ -1,7 +1,7 @@
 
 interface control {
 
-    void speed();
+    void speed(int a);
 }
 
 abstract class Vehicle implements control{
@@ -9,9 +9,9 @@ abstract class Vehicle implements control{
     String type;
     public Vehicle(String typ)
     {
-        this.type = typ;
+        type = typ;
     }
-    abstract void info();
+    abstract void info(String a, String b);
 }
 
 class Road extends Vehicle{
@@ -21,17 +21,17 @@ class Road extends Vehicle{
         super("Road");
     }
 
-    static String owner_name, model_no;
+    String owner_name, model_no;
 
-    public void info()
+    public void info(String owner_name, String model_no)
     {
-        owner_name = "Ben";
-        model_no = "6tJ4690";
+        this.owner_name = owner_name;
+        this.model_no = model_no;
     }
-    static int sp;
-    public void speed()
+    int speed;
+    public void speed(int speed)
     {
-        sp = 80;
+        this.speed = speed;
     }
 }
 
@@ -42,41 +42,45 @@ class Air extends Vehicle{
         super("Air");
     }
 
-    static String owner_name, model_no;
+    String owner_name, model_no;
 
-    public void info()
+    public void info(String owner_name, String model_no)
     {
-        owner_name = "Jack";
-        model_no = "4t678";
+        this.owner_name = owner_name;
+        this.model_no = model_no;
     }
-    static int sp;
-    public void speed()
+    int speed;
+    public void speed(int speed)
     {
-        sp =1080;
+        this.speed = speed;
     }
 }
 
 class two_wheeler extends Road{
 
-    void display(){
-        super.info();
+    public void info()
+    {
         System.out.println("Type of the Vehicle: "+super.type);
         System.out.println("Owner of the Vehicle: "+super.owner_name);
         System.out.println("Model number of the vehicle: "+super.model_no);
-        super.speed();
-        System.out.println("Speed of the Vehicle is: "+sp);
+    }
+    public void speed()
+    {
+        System.out.println("Speed of the Vehicle is: "+super.speed);
     }
 }
 
 class air_plane extends Air{
 
-    void display(){
-        super.info();
+    public void info()
+    {
         System.out.println("Type of the Vehicle: "+super.type);
         System.out.println("Owner of the Vehicle: "+super.owner_name);
-        System.out.println("Model number of the Vehicle: "+super.model_no);
-        super.speed();
-        System.out.println("Speed of the Vehicle is: "+sp);
+        System.out.println("Model number of the vehicle: "+super.model_no);
+    }
+    public void speed()
+    {
+        System.out.println("Speed of the Vehicle is: "+super.speed);
     }
 }
 
@@ -84,10 +88,18 @@ public class task01 {
 
     public static void main(String[] args) {
 
-        two_wheeler obj = new two_wheeler();
-        obj.display();
+        two_wheeler obj1 = new two_wheeler();
+        obj1.info("Ben","6t5ty");
+        obj1.info();
+        System.out.println("--------------------------------------");
+        obj1.info("Jack","8t992");
+        obj1.info();
+        System.out.println("--------------------------------------");
         air_plane air = new air_plane();
-        air.display();
-        
+        air.info("Henry","Ryt123456");
+        air.info();
+        System.out.println("--------------------------------------");
+        air.info("Fudge","Lft098764");
+        air.info();
     }
 }
