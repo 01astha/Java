@@ -5,6 +5,7 @@ public class SampleClassForRebase {
         int a = 10;
         int b = 20;
         System.out.println(a*b);
+        adding sample line
     }
 }
 //tune kuch push kra h...isi file m and meine abi pull ni kra h
