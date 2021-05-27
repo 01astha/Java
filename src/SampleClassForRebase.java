@@ -7,3 +7,7 @@ public class SampleClassForRebase {
         System.out.println(a*b);
     }
 }
+//tune kuch push kra h...isi file m and meine abi pull ni kra h
+ab m same file me changes krke commit krke pushh krunga
+to isme ideally rebase-conflict ana chaiye push krne pe
+
