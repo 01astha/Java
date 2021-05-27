@@ -4,11 +4,11 @@ public class SampleClassForRebase {
         // this is line to demonstrate rebase conflict
         int a = 10;
         int b = 20;
+
         System.out.println(a*b);
-        adding sample line
+
+        System.out.println("Result "+a*b);
     }
 }
-//tune kuch push kra h...isi file m and meine abi pull ni kra h
-ab m same file me changes krke commit krke pushh krunga
-to isme ideally rebase-conflict ana chaiye push krne pe
+
 
