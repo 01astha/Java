@@ -2,12 +2,12 @@ import java.util.*;
 import java.io.*;
 
 class JavaDatatypes{
-    public static void main(String []argh)
+    public static void main(String []args)
     {
         Scanner sc = new Scanner(System.in);
         int t=sc.nextInt();
 
-        for(int i=0;i<t;i++)
+        for(int i=1;i<=t;i++)
         {
             try
             {
@@ -20,7 +20,7 @@ class JavaDatatypes{
             }
             catch(Exception e)
             {
-                System.out.println(sc.next()+" can't be fitted anywhere.");
+                System.out.println(sc.next() + " can't be fitted anywhere.");
             }
         }
     }
