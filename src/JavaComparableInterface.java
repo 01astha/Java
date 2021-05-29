@@ -34,7 +34,7 @@ public class JavaComparableInterface {
 
         emp.add(new Employees(1, "John", 98000));
         emp.add(new Employees(4, "Ben", 80000));
-        emp.add(new Employees(3, "Robin", 130000));
+        emp.add(new Employees(3,  "Robin", 130000));
         emp.add(new Employees(2, "Andrew", 75000));
 
         Collections.sort(emp);
