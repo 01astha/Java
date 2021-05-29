@@ -1,5 +1,6 @@
 //Program to sort the employees on the basis of their salary.
 
+
 import java.util.*;
 import java.util.Collections;
 
@@ -10,6 +11,7 @@ class Employees implements Comparable<Employees>
 
     public Employees(int emp_id, String emp_name, int emp_salary)
     {
+
         super();
         this.emp_id = emp_id;
         this.emp_name = emp_name;
@@ -17,7 +19,7 @@ class Employees implements Comparable<Employees>
     }
 
     public String toString(){
-        return "Employees[Employee ID = " + emp_id + "; Employee Name = " + emp_name + "; Employee Salary = " + emp_salary +"]";
+        return " Employees[Employee ID = " + emp_id + "; Employee Name = " + emp_name + "; Employee Salary = " + emp_salary +"]";
     }
 
     public int compareTo(Employees e)
@@ -29,6 +31,7 @@ class Employees implements Comparable<Employees>
 public class JavaComparableInterface {
 
     public static void main(String[] args)
+            
     {
         List<Employees> emp = new ArrayList<>();
 
