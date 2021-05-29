@@ -6,7 +6,6 @@ public class SampleClassForRebase {
         int b = 20;
 
         System.out.println(a*b);
-
         System.out.println("Result "+a*b);
     }
 }
