@@ -4,6 +4,7 @@ import java.util.Collections;
 
 class Employees implements Comparable<Employees>
 {
+    
     int emp_id, emp_salary;
     String emp_name;
 
