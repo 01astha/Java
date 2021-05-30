@@ -1,5 +1,4 @@
 //Program to sort the employees on the basis of their salary.
-
 import java.util.*;
 import java.util.Collections;
 
