@@ -12,7 +12,7 @@ public class JavaFunctionOverloading {
     }
 
     public String sum(String a, String b){
-        return (a+b);
+        return a.concat(b);
     }
 
     public double sum(double a, double b){
